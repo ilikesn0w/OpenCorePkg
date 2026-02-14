@@ -60,9 +60,9 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_FIRMWARE_DEVICE,           // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT    |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
-     EFI_RESOURCE_ATTRIBUTE_TESTED |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),  // ResourceAttribute
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
+      EFI_RESOURCE_ATTRIBUTE_TESTED |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE), // ResourceAttribute
     0,                                              // PhysicalStart
     0                                               // ResourceLength
   },
@@ -121,12 +121,12 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_SYSTEM_MEMORY,                     // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT                 |
-     EFI_RESOURCE_ATTRIBUTE_TESTED                  |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
-     EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
+      EFI_RESOURCE_ATTRIBUTE_TESTED                  |
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
+      EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
     0x0,                                            // PhysicalStart
     0                                               // ResourceLength
   },
@@ -141,12 +141,12 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_SYSTEM_MEMORY,                     // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT                 |
-     EFI_RESOURCE_ATTRIBUTE_TESTED                  |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
-     EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
+      EFI_RESOURCE_ATTRIBUTE_TESTED                  |
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
+      EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
     0x0,                                            // PhysicalStart
     0                                               // ResourceLength
   },
@@ -161,11 +161,11 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_SYSTEM_MEMORY,                     // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT                 |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
-     EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
+      EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
     0x0,                                            // PhysicalStart
     0                                               // ResourceLength
   },
@@ -198,12 +198,12 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_SYSTEM_MEMORY,                     // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT                 |
-     //     EFI_RESOURCE_ATTRIBUTE_TESTED                  | // Do not mark as TESTED, or DxeCore will find it and use it before check Allocation
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
-     EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
+      //     EFI_RESOURCE_ATTRIBUTE_TESTED                  | // Do not mark as TESTED, or DxeCore will find it and use it before check Allocation
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED             |
+      EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE             |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_COMBINEABLE       |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),
     0x0,                                            // PhysicalStart
     0                                               // ResourceLength
   },
@@ -419,9 +419,9 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_FIRMWARE_DEVICE,           // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT    |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
-     EFI_RESOURCE_ATTRIBUTE_TESTED |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),  // ResourceAttribute
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
+      EFI_RESOURCE_ATTRIBUTE_TESTED |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE), // ResourceAttribute
     0,                                              // PhysicalStart (Fixed later)
     NV_STORAGE_FVB_SIZE                             // ResourceLength
   },
@@ -496,9 +496,9 @@ HOB_TEMPLATE  gHobTemplate = {
     },
     EFI_RESOURCE_FIRMWARE_DEVICE,           // ResourceType
     (EFI_RESOURCE_ATTRIBUTE_PRESENT    |
-     EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
-     EFI_RESOURCE_ATTRIBUTE_TESTED |
-     EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE),  // ResourceAttribute
+      EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
+      EFI_RESOURCE_ATTRIBUTE_TESTED |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_BACK_CACHEABLE), // ResourceAttribute
     0,                                              // PhysicalStart (Fixed later)
     NV_FTW_FVB_SIZE                                 // ResourceLength
   },

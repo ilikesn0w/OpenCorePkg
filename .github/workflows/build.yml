@@ -152,7 +152,7 @@ jobs:
         run: docker compose run build-docs
 
   build-windows:
-    name: Windows VS2019
+    name: Windows VS2022
     runs-on: windows-latest
     env:
       HAS_OPENSSL_BUILD: 0
@@ -162,7 +162,9 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
-
+      - uses: TheMrMilchmann/setup-msvc-dev@v4
+        with:
+          arch: x86
       - name: Install Dependencies
         run: |
           choco install make nasm zip iasl --no-progress
