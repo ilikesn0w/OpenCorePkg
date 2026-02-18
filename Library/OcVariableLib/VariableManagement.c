@@ -151,7 +151,7 @@ IsDeletableVariable (
   {
     return TRUE;
     //
-    // Ozmozis extensions if present
+    // Ozmosis extensions if present
     //
   } else if (  CompareGuid (Guid, &mOzmosisProprietary1Guid)
             || CompareGuid (Guid, &mOzmosisProprietary2Guid))
