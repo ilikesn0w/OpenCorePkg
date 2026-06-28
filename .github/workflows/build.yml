@@ -27,6 +27,7 @@ jobs:
 
       - name: Install Linux Toolchain
         run: |
+          brew trust FiloSottile/musl-cross
           brew tap FiloSottile/homebrew-musl-cross
           brew install musl-cross
 
