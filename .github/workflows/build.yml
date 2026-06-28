@@ -17,7 +17,7 @@ env:
 jobs:
   build-macos:
     name: macOS XCODE5
-    runs-on: macos-15-intel
+    runs-on: macos-15-xlarge
     env:
       JOB_TYPE: BUILD
       HOMEBREW_NO_INSTALL_CLEANUP: 1
