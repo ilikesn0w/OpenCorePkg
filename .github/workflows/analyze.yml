@@ -27,6 +27,7 @@ jobs:
           python3 -m venv ~/pyenv
           source ~/pyenv/bin/activate
           python3 -m pip install pyyaml
+          brew trust aws/tap
 
       - name: CI Bootstrap
         run: |
