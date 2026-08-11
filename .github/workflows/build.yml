@@ -17,7 +17,7 @@ env:
 jobs:
   build-macos:
     name: macOS XCODE5
-    runs-on: macos-latest
+    runs-on: macos-15
     env:
       JOB_TYPE: BUILD
       HOMEBREW_NO_INSTALL_CLEANUP: 1
@@ -27,8 +27,9 @@ jobs:
 
       - name: Install Linux Toolchain
         run: |
+          brew trust aws/tap
           brew tap FiloSottile/homebrew-musl-cross
-          brew install musl-cross
+          brew install FiloSottile/musl-cross/musl-cross
 
       - name: Install Dependencies
         run: brew install mingw-w64
@@ -153,7 +154,7 @@ jobs:
 
   build-windows:
     name: Windows VS2022
-    runs-on: windows-latest
+    runs-on: windows-2022
     env:
       HAS_OPENSSL_BUILD: 0
       CC: gcc
