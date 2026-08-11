@@ -23,6 +23,7 @@ jobs:
       # Due to brew adopting PEP 668 https://github.com/orgs/Homebrew/discussions/3404 pip installs should be in a Python venv
       - name: Install Dependencies
         run: |
+          brew trust aws/tap
           brew install shellcheck
           python3 -m venv ~/pyenv
           source ~/pyenv/bin/activate
