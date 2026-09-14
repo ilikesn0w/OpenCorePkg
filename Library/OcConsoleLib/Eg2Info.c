@@ -1,5 +1,6 @@
 /** @file
   Copyright (C) 2021, vit9696. All rights reserved.
+  Portions copyright (C) 2026 ilikesn0w. All rights reserved.
 
   All rights reserved.
 
@@ -25,7 +26,8 @@
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiRuntimeServicesTableLib.h>
 
-STATIC UINT32  mRotation = AppleDisplayRotate0;
+STATIC UINT32   mRotation     = AppleDisplayRotate0;
+STATIC BOOLEAN  mPollDisabled = FALSE;
 
 STATIC
 EFI_STATUS
@@ -93,6 +95,23 @@ AppleEg2GetRotation (
 }
 
 STATIC
+EFI_STATUS
+EFIAPI
+AppleEg2SetPollDisabled (
+  IN APPLE_EG2_INFO_PROTOCOL  *This,
+  IN BOOLEAN                  PollDisabled
+  )
+{
+  if (This == NULL) {
+    return EFI_INVALID_PARAMETER;
+  }
+
+  mPollDisabled = PollDisabled;
+
+  return EFI_SUCCESS;
+}
+
+STATIC
 APPLE_EG2_INFO_PROTOCOL
   mAppleEg2Info = {
   APPLE_EG2_INFO_PROTOCOL_REVISION,
@@ -101,7 +120,8 @@ APPLE_EG2_INFO_PROTOCOL
   AppleEg2GetPlatformInfo,
   AppleEg2StartupDisplay,
   AppleEg2GetHibernation,
-  AppleEg2GetRotation
+  AppleEg2GetRotation,
+  AppleEg2SetPollDisabled
 };
 
 APPLE_EG2_INFO_PROTOCOL *

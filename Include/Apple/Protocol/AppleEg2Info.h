@@ -1,5 +1,6 @@
 /** @file
 Copyright (C) 2020, vit9696.  All rights reserved.<BR>
+Portions copyright (C) 2026 ilikesn0w. All rights reserved.<BR>
 This program and the accompanying materials are licensed and made available
 under the terms and conditions of the BSD License which accompanies this
 distribution.  The full text of the license may be found at
@@ -21,7 +22,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
   { 0x63FAECF2, 0xE7EE, 0x4CB9,               \
     { 0x8A, 0x0C, 0x11, 0xCE, 0x5E, 0x89, 0xE3, 0x3C } }
 
-#define APPLE_EG2_INFO_PROTOCOL_REVISION  0x10002
+#define APPLE_EG2_INFO_PROTOCOL_REVISION  0x10003
 
 typedef struct APPLE_EG2_INFO_PROTOCOL_ APPLE_EG2_INFO_PROTOCOL;
 
@@ -86,6 +87,18 @@ EFI_STATUS
   OUT  UINT32                       *Rotation
   );
 
+/**
+  Seems to gate a 5s periodic display poll routine,
+  TRUE suppresses it, returns EFI_NOT_FOUND if
+  there's no active display
+**/
+typedef
+EFI_STATUS
+(EFIAPI *APPLE_EG2_INFO_SET_POLL_DISABLED)(
+  IN  APPLE_EG2_INFO_PROTOCOL       *This,
+  IN  BOOLEAN                        PollDisabled
+  );
+
 struct APPLE_EG2_INFO_PROTOCOL_ {
   UINT32                              Revision;
   VOID                                *Unused;
@@ -94,6 +107,7 @@ struct APPLE_EG2_INFO_PROTOCOL_ {
   APPLE_EG2_INFO_STARTUP_DISPLAY      StartupDisplay;
   APPLE_EG2_INFO_GET_HIBERNATION      GetHibernation;
   APPLE_EG2_INFO_GET_ROTATION         GetRotation;
+  APPLE_EG2_INFO_SET_POLL_DISABLED    SetPollDisabled;
 };
 
 extern EFI_GUID  gAppleEg2InfoProtocolGuid;
