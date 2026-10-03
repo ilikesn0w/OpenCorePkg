@@ -24,7 +24,7 @@
 !else
   NumBlocks          = 0x25       #GenFv image size 0x250000
 !endif
-!endif 
+!endif
   FvAlignment        = 16         #FV alignment and FV attributes setting.
   ERASE_POLARITY     = 1
   MEMORY_MAPPED      = TRUE
@@ -103,7 +103,7 @@
   # INF  MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 
   # Filesystems (FAT is mandatory)
-  INF  FatPkg/EnhancedFatDxe/Fat.inf
+  INF  OpenCorePkg/Platform/OpenFat/Fat.inf
 
   # Binary drivers
   # INF  RuleOverride=BINARY OpenCorePkg/Legacy/BinDrivers/HfsPlus.inf

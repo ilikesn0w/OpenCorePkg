@@ -134,7 +134,7 @@
 [LibraryClasses.common.DXE_DRIVER]
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
   NestedInterruptTplLib|OvmfPkg/Library/NestedInterruptTplLib/NestedInterruptTplLib.inf
-  
+
 [LibraryClasses.common.DXE_RUNTIME_DRIVER]
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
   VariablePolicyLib|MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLibRuntimeDxe.inf
@@ -206,7 +206,7 @@
   MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
 
   # Foreign file system support
-  FatPkg/EnhancedFatDxe/Fat.inf
+  OpenCorePkg/Platform/OpenFat/Fat.inf
 
   # IDE/AHCI Support
   MdeModulePkg/Bus/Pci/SataControllerDxe/SataControllerDxe.inf

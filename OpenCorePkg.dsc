@@ -314,6 +314,7 @@
   OpenCorePkg/Legacy/BootPlatform/BiosVideo/BiosVideo.inf
   OpenCorePkg/Platform/CrScreenshotDxe/CrScreenshotDxe.inf
   OpenCorePkg/Platform/OpenCanopy/OpenCanopy.inf
+  OpenCorePkg/Platform/OpenFat/Fat.inf
   OpenCorePkg/Platform/OpenLegacyBoot/OpenLegacyBoot.inf
   OpenCorePkg/Platform/OpenLinuxBoot/OpenLinuxBoot.inf
   OpenCorePkg/Platform/OpenNetworkBoot/OpenNetworkBoot.inf

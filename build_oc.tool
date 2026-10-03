@@ -341,6 +341,18 @@ package() {
   done
   cp "${selfdir}/Staging/EnableGop/Release/"* "${dstdir}/Utilities/EnableGop"/ || exit 1
 
+  # Copy OpenFat.
+  mkdir -p "${dstdir}/Utilities/OpenFat" || exit 1
+  OPEN_FAT_GUID="C7A3FA9E-F981-4D0C-8BD6-B012B6F74153"
+  cp "FV/Ffs/${OPEN_FAT_GUID}OpenFat/${OPEN_FAT_GUID}.ffs" "${dstdir}/Utilities/OpenFat/OpenFat.ffs" || exit 1
+  helpFiles=(
+    "README.md"
+    "UEFITool_screenshot.png"
+  )
+  for file in "${helpFiles[@]}"; do
+    cp "${selfdir}/Platform/OpenFat/${file}" "${dstdir}/Utilities/OpenFat"/ || exit 1
+  done
+
   # Provide EDK-II BaseTools.
   mkdir "${dstdir}/Utilities/BaseTools" || exit 1
   if [ "$(unamer)" = "Windows" ]; then
