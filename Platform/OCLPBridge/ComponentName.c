@@ -46,7 +46,7 @@ GLOBAL_REMOVE_IF_UNREFERENCED EFI_COMPONENT_NAME2_PROTOCOL  gOCLPBridgeComponent
 GLOBAL_REMOVE_IF_UNREFERENCED EFI_UNICODE_STRING_TABLE  mOCLPBridgeNameTable[] = {
   {
     "eng;en",
-    L"OCLP bridge platform driver"
+    L"OCLP bridge"
   },
   {
     NULL,
