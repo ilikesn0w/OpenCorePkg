@@ -1,0 +1,40 @@
+## @file
+# OCLP bridge driver.
+#
+# Copyright (c) 2026, ilikesn0w. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause
+##
+
+[Defines]
+  INF_VERSION                         = 0x0001001B
+  BASE_NAME                           = OCLPBridge
+  FILE_GUID                           = 65E3AB7D-DE62-4B55-8D81-89E57605F2C7
+  MODULE_TYPE                         = UEFI_DRIVER
+  VERSION_STRING                      = 1.0
+  ENTRY_POINT                         = UefiMain
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  ComponentName.c
+  OCLPBridge.c
+  OCLPBridgePrivate.h
+
+[Packages]
+  OpenCorePkg/OpenCorePkg.dec
+  MdePkg/MdePkg.dec
+
+[Protocols]
+  gOcInterfaceProtocolGuid  ## CONSUMES PRODUCES
+
+[LibraryClasses]
+  DebugLib
+  UefiDriverEntryPoint
+  UefiRuntimeServicesTableLib
+  UefiLib
+  OcMiscLib
+  OcStringLib

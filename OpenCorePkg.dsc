@@ -338,6 +338,7 @@
       NULL|OpenCorePkg/Library/OcVariableRuntimeLib/OcVariableRuntimeLib.inf
   }
   OpenCorePkg/Platform/FirmwareSettingsEntry/FirmwareSettingsEntry.inf
+  OpenCorePkg/Platform/OCLPBridge/OCLPBridge.inf
   OpenCorePkg/Platform/ResetNvramEntry/ResetNvramEntry.inf
   OpenCorePkg/Platform/ToggleSipEntry/ToggleSipEntry.inf
   OpenCorePkg/Staging/AudioDxe/AudioDxe.inf
