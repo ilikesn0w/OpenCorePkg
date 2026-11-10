@@ -33,22 +33,7 @@ OCLPBridgeComponentNameGetControllerName (
   OUT CHAR16                      **ControllerName
   );
 
-//
-// EFI CN1.
-//
-EFI_COMPONENT_NAME_PROTOCOL  gOCLPBridgeComponentName = {
-  OCLPBridgeComponentNameGetDriverName,
-  OCLPBridgeComponentNameGetControllerName,
-  "eng"
-};
-
-//
-// EFI CN2.
-//
-EFI_COMPONENT_NAME2_PROTOCOL  gOCLPBridgeComponentName2 = {
-  (EFI_COMPONENT_NAME2_GET_DRIVER_NAME)OCLPBridgeComponentNameGetDriverName,
-  (EFI_COMPONENT_NAME2_GET_CONTROLLER_NAME)OCLPBridgeComponentNameGetControllerName,
-  "en"
-};
+extern EFI_COMPONENT_NAME2_PROTOCOL  gOCLPBridgeComponentName;
+extern EFI_COMPONENT_NAME2_PROTOCOL  gOCLPBridgeComponentName2;
 
 #endif // OCLP_BRIDGE_PRIVATE_H
