@@ -200,6 +200,7 @@ package() {
       "Mtftp4Dxe.efi"
       "Mtftp6Dxe.efi"
       "NvmExpressDxe.efi"
+      "OCLPBridge.efi"
       "OpenCanopy.efi"
       "OpenHfsPlus.efi"
       "OpenLegacyBoot.efi"
