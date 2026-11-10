@@ -7,6 +7,24 @@
 
 #include "OCLPBridgePrivate.h"
 
+EFI_STATUS
+EFIAPI
+OCLPBridgeComponentNameGetDriverName (
+  IN  EFI_COMPONENT_NAME_PROTOCOL  *This,
+  IN  CHAR8                        *Language,
+  OUT CHAR16                       **DriverName
+  );
+
+EFI_STATUS
+EFIAPI
+OCLPBridgeComponentNameGetControllerName (
+  IN  EFI_COMPONENT_NAME_PROTOCOL  *This,
+  IN  EFI_HANDLE                   ControllerHandle,
+  IN  EFI_HANDLE                   ChildHandle        OPTIONAL,
+  IN  CHAR8                        *Language,
+  OUT CHAR16                       **ControllerName
+  );
+
 //
 // EFI CN1.
 //
@@ -39,9 +57,9 @@ GLOBAL_REMOVE_IF_UNREFERENCED EFI_UNICODE_STRING_TABLE  mOCLPBridgeNameTable[] =
 EFI_STATUS
 EFIAPI
 OCLPBridgeComponentNameGetDriverName (
-  IN EFI_COMPONENT_NAME_PROTOCOL  *This,
-  IN  CHAR8                       *Language,
-  OUT CHAR16                      **DriverName
+  IN  EFI_COMPONENT_NAME_PROTOCOL  *This,
+  IN  CHAR8                        *Language,
+  OUT CHAR16                       **DriverName
   )
 {
   return LookupUnicodeString2 (
@@ -56,11 +74,11 @@ OCLPBridgeComponentNameGetDriverName (
 EFI_STATUS
 EFIAPI
 OCLPBridgeComponentNameGetControllerName (
-  IN EFI_COMPONENT_NAME_PROTOCOL  *This,
-  IN  EFI_HANDLE                  ControllerHandle,
-  IN  EFI_HANDLE                  ChildHandle        OPTIONAL,
-  IN  CHAR8                       *Language,
-  OUT CHAR16                      **ControllerName
+  IN  EFI_COMPONENT_NAME_PROTOCOL  *This,
+  IN  EFI_HANDLE                   ControllerHandle,
+  IN  EFI_HANDLE                   ChildHandle        OPTIONAL,
+  IN  CHAR8                        *Language,
+  OUT CHAR16                       **ControllerName
   )
 {
   return EFI_UNSUPPORTED;
