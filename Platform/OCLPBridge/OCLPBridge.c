@@ -97,7 +97,7 @@ OverrideOcPickerContext (
   // Yes, maybe it's bad, but I think it's still better than getting config from storage.
   //
   if ((Picker->TitleSuffix == NULL) || (Picker->TitleSuffix[0] == '\0')) {
-    DEBUG ((DEBUG_WARN, "OCLPBridge: OCS_EXPOSE_VERSION_UI is set, cannot set version string\n"));
+    DEBUG ((DEBUG_INFO, "OCLPBridge: OCS_EXPOSE_VERSION_UI is set, cannot set version string\n"));
     return Status;
   }
 
