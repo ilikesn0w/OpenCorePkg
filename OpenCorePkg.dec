@@ -860,6 +860,9 @@
   OcAppleChunklistLib|Include/Acidanthera/Library/OcAppleChunklistLib.h
 
   ##  @libraryclass
+  OcAppleDeviceControlLib|Include/Acidanthera/Library/OcAppleDeviceControlLib.h
+
+  ##  @libraryclass
   OcAppleDiskImageLib|Include/Acidanthera/Library/OcAppleDiskImageLib.h
 
   ##  @libraryclass

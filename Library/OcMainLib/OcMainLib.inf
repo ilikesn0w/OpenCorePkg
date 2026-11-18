@@ -78,6 +78,7 @@
   OcAfterBootCompatLib
   OcApfsLib
   OcAppleBootPolicyLib
+  OcAppleDeviceControlLib
   OcAppleEventLib
   OcAppleImageConversionLib
   OcAudioLib

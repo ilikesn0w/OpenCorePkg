@@ -742,6 +742,7 @@ OC_SCHEMA
   OC_SCHEMA_BOOLEAN_IN ("AppleAudio",              OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleAudio),
   OC_SCHEMA_BOOLEAN_IN ("AppleBootPolicy",         OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleBootPolicy),
   OC_SCHEMA_BOOLEAN_IN ("AppleDebugLog",           OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleDebugLog),
+  OC_SCHEMA_BOOLEAN_IN ("AppleDeviceControl",      OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleDeviceControl),
   OC_SCHEMA_BOOLEAN_IN ("AppleEg2Info",            OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleEg2Info),
   OC_SCHEMA_BOOLEAN_IN ("AppleFramebufferInfo",    OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleFramebufferInfo),
   OC_SCHEMA_BOOLEAN_IN ("AppleImageConversion",    OC_GLOBAL_CONFIG, Uefi.ProtocolOverrides.AppleImageConversion),

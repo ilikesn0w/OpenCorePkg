@@ -23,6 +23,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 #include <Library/MemoryAllocationLib.h>
 #include <Library/OcAfterBootCompatLib.h>
 #include <Library/OcAppleBootPolicyLib.h>
+#include <Library/OcAppleDeviceControlLib.h>
 #include <Library/OcAppleEventLib.h>
 #include <Library/OcAppleImageConversionLib.h>
 #include <Library/OcAudioLib.h>
@@ -497,6 +498,10 @@ OcReinstallProtocols (
 
   if (OcAppleEg2InfoInstallProtocol (Config->Uefi.ProtocolOverrides.AppleEg2Info) == NULL) {
     DEBUG ((DEBUG_INFO, "OC: Failed to install eg2 info protocol\n"));
+  }
+
+  if (OcAppleDeviceControlInstallProtocol (Config->Uefi.ProtocolOverrides.AppleDeviceControl) == NULL) {
+    DEBUG ((DEBUG_INFO, "OC: Failed to install device control protocol\n"));
   }
 }
 

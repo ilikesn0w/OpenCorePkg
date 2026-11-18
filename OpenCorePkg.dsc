@@ -77,6 +77,7 @@
   OcApfsLib|OpenCorePkg/Library/OcApfsLib/OcApfsLib.inf
   OcAppleBootPolicyLib|OpenCorePkg/Library/OcAppleBootPolicyLib/OcAppleBootPolicyLib.inf
   OcAppleChunklistLib|OpenCorePkg/Library/OcAppleChunklistLib/OcAppleChunklistLib.inf
+  OcAppleDeviceControlLib|OpenCorePkg/Library/OcAppleDeviceControlLib/OcAppleDeviceControlLib.inf
   OcAppleDiskImageLib|OpenCorePkg/Library/OcAppleDiskImageLib/OcAppleDiskImageLib.inf
   OcAppleEventLib|OpenCorePkg/Library/OcAppleEventLib/OcAppleEventLib.inf
   OcAppleFirmwarePasswordLib|OpenCorePkg/Library/OcAppleFirmwarePasswordLib/OcAppleFirmwarePasswordLib.inf
@@ -247,6 +248,7 @@
   OpenCorePkg/Library/OcApfsLib/OcApfsLib.inf
   OpenCorePkg/Library/OcAppleBootPolicyLib/OcAppleBootPolicyLib.inf
   OpenCorePkg/Library/OcAppleChunklistLib/OcAppleChunklistLib.inf
+  OpenCorePkg/Library/OcAppleDeviceControlLib/OcAppleDeviceControlLib.inf
   OpenCorePkg/Library/OcAppleDiskImageLib/OcAppleDiskImageLib.inf
   OpenCorePkg/Library/OcAppleEventLib/OcAppleEventLib.inf
   OpenCorePkg/Library/OcAppleFirmwarePasswordLib/OcAppleFirmwarePasswordLib.inf
